@@ -82,6 +82,24 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6bc8abdd-a1dd-43f1-9282-1c61252e2900",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Test.Nettiauto.Initialize.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6b3fe9b2-c1ab-4efd-ad3c-f218123de6a4",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Test.Nettiauto.SearchForVehicles.Success.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "75167b9c-ac58-4cdc-9076-cd73a42e909c",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Test.Nettiauto.SearchForVehicles.SearchResultsDoNotOpen.xaml"
       }
     ],
     "modernBehavior": true

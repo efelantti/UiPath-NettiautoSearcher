@@ -1,0 +1,8 @@
+{
+  "mockedWorkflows": [
+    {
+      "mockFilePath": "Mocks\\Nettiauto\\Nettiauto.SearchForVehicles_mock.xaml",
+      "sourceWorkflowPath": "Nettiauto\\Nettiauto.SearchForVehicles.xaml"
+    }
+  ]
+}
