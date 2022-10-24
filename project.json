@@ -100,6 +100,18 @@
         "testCaseId": "75167b9c-ac58-4cdc-9076-cd73a42e909c",
         "testCaseType": "TestCase",
         "fileName": "Tests\\Test.Nettiauto.SearchForVehicles.SearchResultsDoNotOpen.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f2b23db2-6ea2-49ea-bd6b-437fb9f6fcef",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Test.Nettiauto.ScrapeSearchResults.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b99bd0de-3f0e-4e74-a3f9-3e5ff087ea2f",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Test.Nettiauto.FilterScrapeOutput.xaml"
       }
     ],
     "modernBehavior": true
