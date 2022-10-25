@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1778,6238</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1311,6423</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Nettiauto_ScrapeSearchResults_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="37">
@@ -109,27 +109,27 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="&quot;Table Extraction&quot; activity is not able to fetch other data from the cars than the names. For this reason, we extract them manually.&#xD;&#xA;&#xD;&#xA;Result datatable has columns:&#xD;&#xA;- id (string)&#xD;&#xA;- make (string)&#xD;&#xA;- mileage (int)&#xD;&#xA;- model (string)&#xD;&#xA;- postedby (string)&#xD;&#xA;- price (int)&#xD;&#xA;- vehicletype (string)&#xD;&#xA;- year (int)" DisplayName="Nettiauto_ScrapeSearchResults" sap:VirtualizedContainerService.HintSize="1788,6173" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="&quot;Table Extraction&quot; activity is not able to fetch other data from the cars than the names. For this reason, we extract them manually.&#xA;&#xA;Result datatable has columns:&#xA;- id (string)&#xA;- make (string)&#xA;- mileage (int)&#xA;- model (string)&#xA;- postedby (string)&#xA;- price (int)&#xA;- vehicletype (string)&#xA;- year (int)" DisplayName="Nettiauto_ScrapeSearchResults" sap:VirtualizedContainerService.HintSize="1321,6358" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable sap2010:Annotation.AnnotationText="Empty table with columns." DataTable="[ScrapeResults]" DisplayName="Build Data Table - ScrapeResults" sap:VirtualizedContainerService.HintSize="1726,100" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;id&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;make&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;mileage&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;model&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;postedBy&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;vehicleType&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;year&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+    <ui:BuildDataTable sap2010:Annotation.AnnotationText="Empty table with columns." DataTable="[ScrapeResults]" DisplayName="Build Data Table - ScrapeResults" sap:VirtualizedContainerService.HintSize="1259,100" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;id&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;make&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;mileage&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;model&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;postedBy&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;vehicleType&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;year&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Vaihtoautot - Suomen suurin valikoima - Nettiauto" sap:VirtualizedContainerService.HintSize="1726,5734" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="651e84e2-8806-4db4-8e6b-43201b5c6694" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Vaihtoautot - Suomen suurin valikoima - Nettiauto" sap:VirtualizedContainerService.HintSize="1259,5778" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="651e84e2-8806-4db4-8e6b-43201b5c6694" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do - Use Browser" sap:VirtualizedContainerService.HintSize="1692,5508" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do - Use Browser" sap:VirtualizedContainerService.HintSize="1225,5552" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="children" />
               <Variable x:TypeArguments="x:Boolean" Name="morePagesAvailable" />
@@ -140,9 +140,9 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleDoWhile sap2010:Annotation.AnnotationText="Loop through pages, until max items count is reached or no more pages available." CurrentIndex="[index]" DisplayName="Do While - Scrape page" sap:VirtualizedContainerService.HintSize="1630,5386" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+            <ui:InterruptibleDoWhile sap2010:Annotation.AnnotationText="Loop through pages, until max items count is reached or no more pages available." Condition="[morePagesAvailable AndAlso ScrapeResults.Rows.Count &lt; MaxItemsToScrape]" CurrentIndex="[index]" DisplayName="Do While - Scrape page" sap:VirtualizedContainerService.HintSize="1163,5429" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body - Page" sap:VirtualizedContainerService.HintSize="1594,5180" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                <Sequence DisplayName="Body - Page" sap:VirtualizedContainerService.HintSize="1127,5223" sap2010:WorkflowViewState.IdRef="Sequence_18">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Boolean" Name="relativeVisibility" />
                     <Variable x:TypeArguments="ui:UiElement" Name="nextPageLink" />
@@ -152,8 +152,8 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1532,101" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[String.Format(&quot;Scraping page {0}.&quot;, index)]" />
-                  <ui:FindChildren sap2010:Annotation.AnnotationText="Get all search result elements from the current page.&#xD;&#xA;--------&#xD;&#xA;Another option would be to use &quot;For each UI element&quot;. Since in this case we need to wait for the spinner to vanish, I have chosen to use Find Children instead (we any way have to program the clicking logic)." Children="[children]" DisplayName="Find Children (Search results)" Filter="&lt;webctrl class='childVifUrl tricky_link'/&gt;" sap:VirtualizedContainerService.HintSize="1532,218" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_DESCENDANTS">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1065,101" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[String.Format(&quot;Scraping page {0}.&quot;, index)]" />
+                  <ui:FindChildren sap2010:Annotation.AnnotationText="Get all search result elements from the current page.&#xA;--------&#xA;Another option would be to use &quot;For each UI element&quot;. Since in this case we need to wait for the spinner to vanish, I have chosen to use Find Children instead (we any way have to program the clicking logic)." Children="[children]" DisplayName="Find Children (Search results)" Filter="&lt;webctrl class='childVifUrl tricky_link'/&gt;" sap:VirtualizedContainerService.HintSize="1065,218" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_DESCENDANTS">
                     <ui:FindChildren.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dfab5cf6-5982-4172-86c5-9ba21ef21d11" InformativeScreenshot="140be93c7835ea62ac6c73a5fb3366f6" Selector="&lt;webctrl id='listingData' /&gt;">
                         <ui:Target.TimeoutMS>
@@ -170,7 +170,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:FindChildren>
-                  <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Get details for each of the search results." DisplayName="For Each - Search result" sap:VirtualizedContainerService.HintSize="1532,2666" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[children]">
+                  <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Get details for each of the search results." DisplayName="For Each - Search result" sap:VirtualizedContainerService.HintSize="1065,2666" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[children]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="ui:UiElement">
                         <ActivityAction.Argument>
@@ -323,9 +323,9 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEach>
-                  <uix:NCheckState DisplayName="Check App State - Next page link" Exists="[morePagesAvailable]" sap:VirtualizedContainerService.HintSize="1532,1953" sap2010:WorkflowViewState.IdRef="NCheckState_6" OutUiElement="[nextPageLink]" ScopeIdentifier="651e84e2-8806-4db4-8e6b-43201b5c6694" Timeout="1" Version="V3">
+                  <uix:NCheckState DisplayName="Check App State - Next page link" Exists="[morePagesAvailable]" sap:VirtualizedContainerService.HintSize="1065,1996" sap2010:WorkflowViewState.IdRef="NCheckState_6" OutUiElement="[nextPageLink]" ScopeIdentifier="651e84e2-8806-4db4-8e6b-43201b5c6694" Timeout="1" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1078,1727" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="611,1770" sap2010:WorkflowViewState.IdRef="Sequence_35">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="ui:UiElement" Name="loader" />
                         </Sequence.Variables>
@@ -334,19 +334,25 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:IfElseIf DisplayName="Else If - Check if should click" sap:VirtualizedContainerService.HintSize="1016,1604" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                        <ui:IfElseIf DisplayName="Else If - Check if should click" sap:VirtualizedContainerService.HintSize="549,1646" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[ScrapeResults.Rows.count &lt; MaxItemsToScrape]">
                                 <ui:IfElseIfBlock.Then>
-                                  <Sequence DisplayName="Body - Should click" sap:VirtualizedContainerService.HintSize="498,1400" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                  <Sequence DisplayName="Body - Should click" sap:VirtualizedContainerService.HintSize="498,1442" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436,97" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;More pages are available - clicking.&quot;]" />
-                                    <uix:NClick ClickType="Single" DisplayName="Click Next page link" sap:VirtualizedContainerService.HintSize="436,146" sap2010:WorkflowViewState.IdRef="NClick_2" InUiElement="[nextPageLink]" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                                    <uix:NClick sap2010:Annotation.AnnotationText="Chromium API seems not to work every time with this button." ClickType="Single" DisplayName="Click Next page link" sap:VirtualizedContainerService.HintSize="436,188" sap2010:WorkflowViewState.IdRef="NClick_2" InUiElement="[nextPageLink]" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NClick>
                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436,97" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Waiting for spinner to vanish.&quot;]" />
                                     <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Check App state does not detect loader disappearing" Condition="[relativeVisibility]" DisplayName="Do While - Wait for loader to disappear" sap:VirtualizedContainerService.HintSize="436,681" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_4" MaxIterations="5">
                                       <ui:InterruptibleDoWhile.Body>
@@ -393,14 +399,11 @@
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable BrowserURL="https://www.nettiauto.com/vaihtoautot?id_country[]=73&amp;chargingPowerFrom=&amp;chargingPowerTo=&amp;page=12" DesignTimeRectangle="389, 508, 32, 30" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Seuraava'" FullSelectorArgument="&lt;webctrl tag='A' aaname='Seuraava' class='pageNavigation next_link_nl' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' aaname='Seuraava' class='pageNavigation next_link_nl' type='' check:text='Seuraava' /&gt;" Guid="1487031a-e87f-4887-83a2-ad171fe5e40b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIRSURBVFhHzVRbctNAEOR01qep1Xd4hIKEdxIgQCXAIXwBuEG+OQGHcH6AHCPedCvbOyvVSl45Fdld1TXu9Ky2a7I1D/yOYbcDLS5Wfv5j5WdfpiHv4p0pYqDFhW+aqtA8ZU1DxUDzb2g43Q55txADVcFUFbt/vy9fiIFmn2B8BLdUBZsQTXBbVbAJfYBxAjb1eq125yvvzvr9cToXiCZYhTqkGWT53zesGarjb6IFC3QMQzxKfme0+7ryl1e35xiKOvXXnc9pwd4Qm8DSWndCUZec66uCTeg9DPFd8ntAOyy1S4Qhmklx2Q30D2nBArEJrEIt1fXndijq1C/9nmCB3sLYkA6LrTUpLrtM3xAFe0M03iCxKjhG11hwMdQ/TIoLb6C/qwWb0GsYkdgTG+i97/bh33/Sb64/L1igVzDuQIcFx8kQnBR1rq+PggV6CWNDOiy2GAaVOtc3RMHeEI1D/E9H1roThrrkXLcKNqEDGCPpsGWXf2/PN5Ph1s30lVBoB3oRGgpqNkzBub4qWKDnMArpsF1bYbhtM31jKNgbCkZJZQAGad5MCFNybqgKNqFnMCKxJ9Zoh4VG9vljtdATaHoKFugpDHI/1Im1YG8oNKiKU2nBJvQYBvkk1Im1EAM95D5IGyfkHHcLMdDiF8w98NH0lXcLMRCx+IlJcS+gsWLzPdc57uKdKVqBdgE7Fsj7G3nhZgAeTYSlAAAAAElFTkSuQmCC" InformativeScreenshot="9f9e4d305823c5b0b75517a7c9f816ab.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='BMW 740 *KORKO 2,99%+kulut* F01 M-sport 225kw #ACC #Webasto #Comfortpenkit #Imuovet #Panoraama #Prof.Navi #HUD' title='Vaihtoautot - Suomen suurin valikoima - Nettiauto' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                      <uix:TargetAnchorable BrowserURL="https://www.nettiauto.com/vaihtoautot?id_country[]=73&amp;chargingPowerFrom=&amp;chargingPowerTo=&amp;page=12" DesignTimeRectangle="389, 508, 32, 30" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Seuraava'" FullSelectorArgument="&lt;webctrl aaname='Seuraava' class='pageNavigation next_link' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' aaname='Seuraava' class='pageNavigation next_link_nl' type='' check:text='Seuraava' /&gt;" Guid="1487031a-e87f-4887-83a2-ad171fe5e40b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIRSURBVFhHzVRbctNAEOR01qep1Xd4hIKEdxIgQCXAIXwBuEG+OQGHcH6AHCPedCvbOyvVSl45Fdld1TXu9Ky2a7I1D/yOYbcDLS5Wfv5j5WdfpiHv4p0pYqDFhW+aqtA8ZU1DxUDzb2g43Q55txADVcFUFbt/vy9fiIFmn2B8BLdUBZsQTXBbVbAJfYBxAjb1eq125yvvzvr9cToXiCZYhTqkGWT53zesGarjb6IFC3QMQzxKfme0+7ryl1e35xiKOvXXnc9pwd4Qm8DSWndCUZec66uCTeg9DPFd8ntAOyy1S4Qhmklx2Q30D2nBArEJrEIt1fXndijq1C/9nmCB3sLYkA6LrTUpLrtM3xAFe0M03iCxKjhG11hwMdQ/TIoLb6C/qwWb0GsYkdgTG+i97/bh33/Sb64/L1igVzDuQIcFx8kQnBR1rq+PggV6CWNDOiy2GAaVOtc3RMHeEI1D/E9H1roThrrkXLcKNqEDGCPpsGWXf2/PN5Ph1s30lVBoB3oRGgpqNkzBub4qWKDnMArpsF1bYbhtM31jKNgbCkZJZQAGad5MCFNybqgKNqFnMCKxJ9Zoh4VG9vljtdATaHoKFugpDHI/1Im1YG8oNKiKU2nBJvQYBvkk1Im1EAM95D5IGyfkHHcLMdDiF8w98NH0lXcLMRCx+IlJcS+gsWLzPdc57uKdKVqBdgE7Fsj7G3nhZgAeTYSlAAAAAElFTkSuQmCC" InformativeScreenshot="9f9e4d305823c5b0b75517a7c9f816ab.png" ScopeSelectorArgument="&lt;html app='msedge.exe' omit:htmlwindowname='BMW 740 *KORKO 2,99%+kulut* F01 M-sport 225kw #ACC #Webasto #Comfortpenkit #Imuovet #Panoraama #Prof.Navi #HUD' title='Vaihtoautot - Suomen suurin valikoima - Nettiauto' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
                     </uix:NCheckState.Target>
                   </uix:NCheckState>
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
-              <ui:InterruptibleDoWhile.Condition>
-                <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="morePagesAvailable AndAlso ScrapeResults.Rows.Count &lt; MaxItemsToScrape" />
-              </ui:InterruptibleDoWhile.Condition>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -414,5 +417,6 @@
         <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHRSURBVDhPddPLK0RRHAfwGa8olPIHKBZSymPIRhJrLCytxopEGllYKPJWjFJWjMdWySulpJCUeZBHmgZjBtcCIZo7g/vz/Z3rNmbm+tVn7j2/zvnec+qMQSt7sWCEHLDAMrjgGDahG/IhDiKLG5ACZjiBEFCUL/BAB6RDxOJk4C+824swufCXtjiyF4QJUEP4B/jL746SePL2NpI0N0IeSx0mG8Vid1M1SbPD5B+3kKsyg3u8wy6I48VZwGclR1kSvdm3iSt4d03nDSY6LDCQNNMverLfQye12dpOfFDGAW0gzvw3gOt5a5Fc5ekkTfeJcVSAAmMcsMSL9QKUUJB8wy3/BTAnBzh1AxRFPOTbS3rd31DfYwMeOECcPzpAvnFTwHsh3pXPkHj+F7CqF/Cys0reHjN9Bz7EmEsn4IgDOuEzJmB3jZzlafS4YhNjLp2AKQ7IhbOYgL11TDDSaX0eBa7ORE/2X/4NkKCSA1gzyI7SBPJbO+hpfYF8o61kN6kXydNeI3Yi2QbpqCqTe9+YPwSJWkAqWEEW11ajbjM8Vnu8eB4yQS1+gTTgP8oV8KRwgIovzgMMQHixVtwA/qsWwAgcwD3wWfmuTEIFJMJvGQw/vMcnXk0M0coAAAAASUVORK5CYII=" InformativeScreenshot="726bc80a13c2bb8d189452d850710d22.jpg" Selector="&lt;html app='msedge.exe' title='*Nettiauto*' /&gt;" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1259,101" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[String.FOrmat(&quot;Scrape finished with {0} items.&quot;, ScrapeResults.rows.count)]" />
   </Sequence>
 </Activity>

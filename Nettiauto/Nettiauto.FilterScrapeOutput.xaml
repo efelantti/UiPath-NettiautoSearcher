@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>944,612</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>944,1261</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Nettiauto_FilterScrapeOutput_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="29">
@@ -44,7 +44,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="80">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
@@ -84,22 +84,31 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Filter the scrape results by Year (show only newer vehicles) and Mileage (show only cars with lesser than provided)." DisplayName="Nettiauto_FilterScrapeOutput" sap:VirtualizedContainerService.HintSize="400,547" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Filter the scrape results by Year (show only newer vehicles) and Mileage (show only cars with lesser than provided)." DisplayName="Nettiauto_FilterScrapeOutput" sap:VirtualizedContainerService.HintSize="544,1196" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(sd:DataRow)" Name="filteredScrapeResultRows" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Format(&quot;Filtering scrape results - with arguments year = {0}, mileage = {1}.&quot;, ShowCarsNewerOrEqualToYear, MaxMileage)]" />
-    <Assign sap2010:Annotation.AnnotationText="Takes into account possibility of nulls." DisplayName="Assign FilteredScrapeResults" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="482,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Format(&quot;Filtering scrape results - with arguments year = {0}, mileage = {1}.&quot;, ShowCarsNewerOrEqualToYear, MaxMileage)]" />
+    <Assign sap2010:Annotation.AnnotationText="Takes into account possibility of nulls." DisplayName="Assign FilteredScrapeResults" sap:VirtualizedContainerService.HintSize="482,101" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
-        <OutArgument x:TypeArguments="sd:DataTable">[FilteredScrapeResults]</OutArgument>
+        <OutArgument x:TypeArguments="scg:List(sd:DataRow)">[FilteredScrapeResultRows]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="sd:DataTable">[ScrapeResults.AsEnumerable.Where(Function(row) row("year") IsNot Nothing AndAlso CInt(row("year")) &gt;=ShowCarsNewerOrEqualToYear AndAlso row("mileage") IsNot Nothing AndAlso CInt(row("mileage")) &lt;= MaxMileage).CopyToDataTable]</InArgument>
+        <InArgument x:TypeArguments="scg:List(sd:DataRow)">[ScrapeResults.AsEnumerable.Where(Function(row) row("year") IsNot Nothing AndAlso CInt(row("year")) &gt;=ShowCarsNewerOrEqualToYear AndAlso row("mileage") IsNot Nothing AndAlso CInt(row("mileage")) &lt;= MaxMileage).ToList]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -107,6 +116,45 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Format(&quot;Filtered: got {0} results.&quot;, FilteredScrapeResults.rows.Count)]" />
+    <If sap2010:Annotation.AnnotationText="If result has 0 rows, then CopyToDatatable throws an exception." Condition="[filteredScrapeResultRows.Count &gt; 0]" DisplayName="If Check amount of results" sap:VirtualizedContainerService.HintSize="482,609" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Assign DisplayName="Assign CopyToDatatable" sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign.To>
+            <OutArgument x:TypeArguments="sd:DataTable">[FilteredScrapeResults]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="sd:DataTable">[filteredScrapeResultRows.CopyToDataTable]</InArgument>
+          </Assign.Value>
+        </Assign>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="400,223" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap2010:Annotation.AnnotationText="Copy just the structure, not the rows." DisplayName="Assign Clone" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign.To>
+              <OutArgument x:TypeArguments="sd:DataTable">[FilteredScrapeResults]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="sd:DataTable">[ScrapeResults.Clone]</InArgument>
+            </Assign.Value>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Assign>
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="482,101" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Format(&quot;Filtered: got {0} results.&quot;, FilteredScrapeResults.rows.Count)]" />
   </Sequence>
 </Activity>

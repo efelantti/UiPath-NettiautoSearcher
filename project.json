@@ -43,13 +43,6 @@
     "fileInfoCollection": [
       {
         "editingStatus": "InProgress",
-        "testCaseId": "3b1076df-9f5b-4035-9d46-aff0fcedf874",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
         "testCaseId": "3540fd12-772d-4217-b3ab-7bee32274754",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
@@ -64,24 +57,10 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "8d5d8b6b-26c3-49da-abe1-cf7ad5118011",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\MainTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
         "testCaseId": "91f106f2-3410-4cad-9f9c-dd007396885a",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\ProcessTestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "d941864d-6fdf-4514-98b4-8e5af4911023",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
       },
       {
         "editingStatus": "InProgress",
