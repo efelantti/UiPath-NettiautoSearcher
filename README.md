@@ -15,4 +15,4 @@ The automation reuses some parts of ReFramework, but due to the simplicity, Main
 # Instructions
 
 - Make sure to allow UiPath Edge extension to work in InCognito mode. See https://docs.uipath.com/studio/docs/microsoft-edge-extension-troubleshooting#Enable%20access%20to%20file%20URLs%20and%20InPrivate%20mode for instructions if needed.
-- *IMPORTANT* If you use Edge browser: Before running the automation, make sure to save your work. The robot kills the msedge process so there is possibility  to lose unsaved data.
+- **IMPORTANT** If you use Edge browser: Before running the automation, make sure to save your work. The robot kills the msedge process so there is possibility  to lose unsaved data.
